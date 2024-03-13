@@ -3796,6 +3796,10 @@ input, select, textarea {
 				text-align: center;
 			}
 
+			#main > .post.featured.intro {
+				text-align: center;
+			}
+
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
@@ -4728,3 +4732,28 @@ input, select, textarea {
 		}
 	}
 
+.intro {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.intro-item {
+    flex-grow: 1; /* Allow items to grow to fill the space */
+    flex-shrink: 1; /* Allow items to shrink if needed */
+    flex-basis: 25%; 
+}
+
+.intro-item:nth-child(2) {
+    flex-basis: 70%; 
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+
+    .intro-item {
+        flex: 1 0 auto; /* Reset flex basis to auto to allow content to dictate width */
+        width: 100%; /* Each item takes up full width on small screens */
+    }
+}
