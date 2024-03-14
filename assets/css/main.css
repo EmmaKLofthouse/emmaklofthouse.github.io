@@ -4757,3 +4757,9 @@ input, select, textarea {
         width: 100%; /* Each item takes up full width on small screens */
     }
 }
+
+
+iframe {
+	width: 60%;
+	height: 600px;
+}
