@@ -4760,7 +4760,9 @@ input, select, textarea {
 
 iframe {
 	width: 60%;
-	height: 600px
+	height: 600px;
+	max-width: 600px;
+	
 }
 
 @media screen and (max-width: 768px) {
